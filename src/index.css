@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Pooppins', sans-serif
+}
+
+:root {
+  --primary-color: #39a6f0;
+  --text-color: #999;
+  --light-color: #eee;
+  --white-color: #fff;
+  ---black-color: #000;
+
+  --Winky-font: "Winky Sans", sans-serif;
+  --Titillium-font: "Titillium Web", sans-serif;
+
+  --transition-regular: 0.3s;
+  --trasition-slow: 0.6s;
+}
+
+body {
+  background-image: url(assets/gradient.jpeg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.nav-bar {
+  padding: 2% 12%;
+}
+
+.logo a {
+  font-size: 3rem;
+  font-family: var(--Winky-font);
+  color: var(---black-color);
+  text-decoration: none !important;
+}
+
+.logo a span {
+  color: var(--primary-color);
+  font-family: var(--Winky-font);
+
+}
+
+.main-container {
+  padding: 1% 12%;
+}
+
+@media (max-width:576) {
+  .main-container {
+    padding: 1rem;
+  }
+}
+
+.task-list-container {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 5px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.task-list-container::-webkit-scrollbar {
+  width: 6px
+}
+
+.task-list-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.task-item {
+  background-color: #fff;
+  transition: all 0.3s ease;
+
+}
+
+.task-item:hover {
+  background-color: #f0f0f0;
+}
+
+.no-task {
+  padding: 3rem 1rem;
+  color: #6c757d;
+  font-style: italic;
+  background-color: #f8f9fa;
+  align-items: center;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.ri-delete-bin-line {
+  transition: color 0.2s ease;
+}
+
+.ri-delete-bin-line:hover {
+  color: #a4161a;
+}
+
+.bg-dark.bg-opacity-50 {
+  backdrop-filter: blur(2px);
+}
+
+.position-fixed {
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50, -40);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50, -50);
+  }
+}
+
+inpu.form-control:focus,
+select.form-select:focus {
+  border-color: #f5930b;
+  box-shadow: 0 0 0 0.2rem rgba(251, 191, 36, 0.25);
+}
+
+.close-task:hover::afte {
+  color: #dc3545;
+  cursor: pointer;
+
+}
+
+.modal-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
